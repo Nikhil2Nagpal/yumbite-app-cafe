@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.carousel-img {
+  width: auto; /* Let the width be determined by the image's aspect ratio */
+  height: 550px; /* Set a consistent height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-top: 20px; /* Adds space above the image */
+  display: block;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-right: auto; /* Centers the image horizontally */
+  width: 100%;
+}
+
+.carousel .carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-root {
+  max-width: 90%; /* Ensures slider fits the container */
+  margin-left: auto;
+  margin-right: auto; /* Centers the slider in the container */
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden; /* To ensure no overflow issues */
+}
+
+/* Hide the "1 of 3" pagination text */
+.carousel .carousel-status {
+  display: none;
+}
+
+/* Hide thumbnails */
+.carousel .thumbs-wrapper {
+  display: none !important;
+}
+
+/* Media Queries for responsiveness */
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .carousel-img {
+    height: 600px;
+  }
+  .carousel-root {
+    max-width: 80%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-img {
+    height: 500px;
+  }
+  .carousel-root {
+    max-width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .carousel-img {
+    height: 400px;
+  }
+  .carousel-root {
+    max-width: 100%;
+  }
+  .carousel .carousel-inner {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,55 @@
+.sign-up-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.left-content {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.left-content,
+.right-content {
+  width: 45%;
+}
+
+.text {
+  color: orange;
+  font-weight: 700;
+}
+
+.right-content h2 {
+  font-weight: 600;
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form label {
+  margin: 10px 0 5px;
+}
+
+.sign-up-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.sign-up-form button {
+  padding: 10px;
+  background-color: orange;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.right-content {
+  border: 2px solid orange;
+  padding: 18px 18px;
+}

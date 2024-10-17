@@ -1,0 +1,105 @@
+/* Basic styling for the header */
+* {
+  padding: 0;
+  margin: 0;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; /* Background color of header */
+  border-bottom: 1px solid #ccc; /* Bottom border */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.span-word {
+  color: #ff5722; /* Highlight part of the logo */
+}
+
+ul.li {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul.li li:hover {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  color: orangered;
+}
+
+ul.li a {
+  text-decoration: none; /* Removes the underline from the links */
+  color: inherit; /* Inherit color from the li */
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background for the cart */
+  padding: 10px 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Removes underline */
+  font-size: 18px; /* Larger text */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.cart:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 20px 30px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  ul.li {
+    gap: 25px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding: 15px 20px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  ul.li {
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero {
+    padding: 10px 15px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  ul.li {
+    gap: 15px;
+  }
+  ul.li li {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.delivery-header {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.delivery-header-name {
+  color: orange;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.delivery-middle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-food-delivery {
+  width: 20%;
+}
+
+.app-status {
+  padding: 50px 0;
+}
+
+.delivery-app {
+  color: green;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fast-delivery-para {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.fast-delivery-para span {
+  display: block;
+  margin-top: 5px;
+}
+
+.delivery-btn {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Media Queries for responsiveness */
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .delivery-header-name {
+    font-size: 32px;
+  }
+  .delivery-middle {
+    flex-direction: row;
+  }
+  .img-food-delivery {
+    width: 25%;
+  }
+  .delivery-app {
+    font-size: 28px;
+  }
+  .fast-delivery-para {
+    font-size: 40px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .delivery-header-name {
+    font-size: 28px;
+  }
+  .delivery-middle {
+    flex-direction: row;
+  }
+  .img-food-delivery {
+    width: 30%;
+  }
+  .delivery-app {
+    font-size: 24px;
+  }
+  .fast-delivery-para {
+    font-size: 35px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .delivery-header-name {
+    font-size: 24px;
+  }
+  .delivery-middle {
+    flex-direction: column;
+  }
+  .img-food-delivery {
+    width: 100%;
+  }
+  .delivery-app {
+    font-size: 20px;
+  }
+  .fast-delivery-para {
+    font-size: 30px;
+  }
+  .delivery-btn {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 766px) {
+  .delivery-header-name {
+    font-size: 24px;
+  }
+  .delivery-middle {
+    flex-direction: row;
+  }
+  .img-food-delivery {
+    width: 50%;
+  }
+  .delivery-app {
+    font-size: 20px;
+  }
+  .fast-delivery-para {
+    font-size: 25px;
+  }
+  .delivery-btn {
+    padding: 8px;
+  }
+}

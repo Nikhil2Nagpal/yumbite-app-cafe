@@ -1,0 +1,84 @@
+.cart-container {
+  max-width: 600px;
+  margin: 30px auto; /* Space above and below the cart */
+  padding: 40px 0; /* Adjust padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+span {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+button {
+  background-color: #ff4757; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.delete-btn {
+  background-color: #ff4757; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 20px; /* Space between item details and button */
+}
+
+button:hover {
+  background-color: #e84118; /* Darker red on hover */
+}
+
+h3 {
+  text-align: right;
+  color: #333;
+  margin-top: 10px;
+}
+
+.order-now-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+  background-color: #2ed573; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 30px auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-now-button:hover {
+  background-color: #1bcf63; /* Darker green on hover */
+}
